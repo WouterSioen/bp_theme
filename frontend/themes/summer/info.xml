@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>summer</name>
+	<version>1.0.0</version>
+	<requirements>
+		<minimum_version>3.0.0</minimum_version>
+	</requirements>
+	<thumbnail>thumbnail.png</thumbnail>
+	<description>
+		<![CDATA[
+			Summer is a responsive theme for Fork CMS. The cheerful colors are inspired by the houses in Portugal. 
+			It includes styles for all standard Fork modules.
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name>Wouter Sioen</name>
+			<url>http://www.woutersioen.be</url>
+		</author>
+	</authors>
+	<metanavigation supported="false" />
+	<templates>
+		<template label="Default" path="core/layout/templates/default.tpl">
+			<positions>
+				<position name="main" />
+				<position name="right" />
+			</positions>
+			<format>
+				[main,main,right]
+			</format>
+		</template>
+	</templates>
+</theme>
