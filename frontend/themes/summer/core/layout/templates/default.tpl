@@ -52,7 +52,7 @@
 			{/option:!positionMain}
 
 			{option:positionRight}
-			<div id="sidebar">
+			<div id="sideBar">
 				{* Right position *}
 				{iteration:positionRight}
 					{option:positionRight.blockIsHTML}

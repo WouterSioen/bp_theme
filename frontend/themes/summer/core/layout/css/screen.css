@@ -1509,12 +1509,15 @@ img.alignRight {
 		min-height: 100%;
 		height: auto !important;
 		height: 100%;
-		margin-bottom: -87px;
+		margin-bottom: -77px;
 	}
 
-	#footer, #stickyPush {
-		margin-top: 0;
-		height: 37px;
+	#footer {
+		height: 27px;
+	}
+
+	#stickyPush {
+		height: 77px;
 	}
 
 	#main {
