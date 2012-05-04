@@ -111,8 +111,8 @@ strong, th, thead td, h1, h2, h3, h4, h5, h6 {
 /* Headings */
 
 h1 {
-	font-size: 40px;
-	padding: 0 0 15px 0;
+	font-size: 30px;
+	padding: 0;
 }
 
 h2 {
@@ -1029,7 +1029,16 @@ a.button:visited {
 
 */
 
+html,
 body {
+	height: 100%;
+}
+
+body {
+	background-color: #222;
+}
+
+#container {
 	background-image: url(../images/background.jpg);
 }
 
@@ -1059,8 +1068,8 @@ body {
 
 		#logo h1 {
 			letter-spacing: -1px;
-			padding: 0;
 			line-height: 1;
+			font-size: 40px;
 		}
 
 	/* Navigation */
@@ -1137,7 +1146,8 @@ body {
 	margin: 0 5%;
 }
 
-	#main h2 {
+	#main h2,
+	#main h1 {
 		line-height: 1;
 	}
 
@@ -1385,32 +1395,23 @@ img.alignRight {
 	Stylesheet for PROJECT
 
 	Media:      print
-	Copyright:  Netlash <http://www.netlash.com>
-	author:     Thomas Deceuninck <thomasdeceuninck@netlash.com>
+	author:     Wouter Sioen <wouter.sioen@gmail.com>
 
 */
 
 @media print {
 	/* the following declaration resets every background to white, every text color to black */
-	* {
-		color: #000 !important;
+	* { 
+		background: transparent !important;
+		color: black !important;
+		box-shadow:none !important;
+		text-shadow: none !important;
 		float: none;
 	}
 
-	div {
-		background-color: white !important;
-	}
-
 	/* place the divs and elements you want to hide here */
-	#navigation, #footer, #language, #breadcrumb {
+	#navigation, #footer, #language, #breadcrumb, #search {
 		display: none;
-	}
-
-	body {
-		font-family: Arial, sans-serif;
-		font-size: 12pt;
-		background: #FFF;
-		border: none;
 	}
 
 	p {
@@ -1504,6 +1505,18 @@ img.alignRight {
 }
 
 @media screen and (min-width: 767px) {
+	#container {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin-bottom: -87px;
+	}
+
+	#footer, #stickyPush {
+		margin-top: 0;
+		height: 37px;
+	}
+
 	#main {
 		width: 60%;
 		float: left;

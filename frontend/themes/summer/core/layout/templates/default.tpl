@@ -72,18 +72,23 @@
 				<div class="side push"></div>
 			{/option:!positionRight}
 
+			<noscript>
+				<div class="message notice">
+					<h4>{$lblEnableJavascript|ucfirst}</h4>
+					<p>{$msgEnableJavascript}</p>
+				</div>
+			</noscript>
+
+			
+
 		</div>
 
-		<noscript>
-			<div class="message notice">
-				<h4>{$lblEnableJavascript|ucfirst}</h4>
-				<p>{$msgEnableJavascript}</p>
-			</div>
-		</noscript>
-
-		{include:core/layout/templates/footer.tpl}
+		<div id="stickyPush"></div>
 
 	</div>
+
+	{include:core/layout/templates/footer.tpl}
+
 	{* General Javascript *}
 	{iteration:jsFiles}
 		<script src="{$jsFiles.file}"></script>
