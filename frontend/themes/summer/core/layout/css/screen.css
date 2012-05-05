@@ -1211,6 +1211,10 @@ body {
 				margin-right: 10px;
 			}
 
+		#searchResults .mod {
+			padding-bottom: 15px;
+		}
+
 		#blogCommentForm {
 			padding-top: 20px;
 			
