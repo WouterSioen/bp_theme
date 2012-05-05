@@ -1236,6 +1236,10 @@ body {
 			padding-bottom: 10px;
 		}
 
+		#sideBar ul ul {
+			padding-left: 15px;
+		}
+
 		#sideBar ul {
 			list-style-type: none;
 		}
