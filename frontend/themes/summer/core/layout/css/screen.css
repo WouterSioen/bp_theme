@@ -183,7 +183,7 @@ textarea:focus {
 */
 
 .content ul {
-	list-style: disc;
+	list-style: disc url('../images/list.png');
 	padding: 0 0 12px 12px;
 }
 
@@ -200,6 +200,7 @@ textarea:focus {
 .content ul ol,
 .content ol ul,
 .content ol ol {
+	list-style-image: none;
 	padding-bottom: 0;
 }
 
@@ -1226,6 +1227,7 @@ body {
 #sideBar {
 	margin: 0 5%;
 	font-size: 14px;
+	padding-bottom: 20px;
 }
 
 	#sideBar .mod {
