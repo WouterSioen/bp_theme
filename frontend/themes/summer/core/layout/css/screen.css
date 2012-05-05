@@ -375,7 +375,6 @@ label,
 	display: block;
 	padding-bottom: 2px;
 	height: 18px;
-	overflow: hidden;
 }
 
 /* Inline errors */
@@ -1144,11 +1143,16 @@ body {
 
 #main {
 	margin: 0 5%;
+	padding-bottom: 20px;
 }
 
 	#main h2,
 	#main h1 {
 		line-height: 1;
+	}
+
+	#main:last-child {
+		margin-bottom: 15px;
 	}
 
 	.info {
@@ -1160,6 +1164,10 @@ body {
 		.pageNavigation {
 			list-style-type: none;
 		}
+
+	#blogArchive tr {
+		border-bottom: 1px solid #002F00;
+	}
 
 	#blogComments {
 		padding-top: 30px;
