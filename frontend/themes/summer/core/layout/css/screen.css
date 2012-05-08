@@ -1282,6 +1282,21 @@ body {
 		list-style-type: none;
 	}
 
+/* autocomplete */
+.ui-autocomplete {
+	font-size: 14px;
+}
+
+.ui-autocomplete strong {
+	font-family: 'OpenSansRegular';
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	background: #ffb733;
+	text-shadow: none;
+}
+
 /*
 	Pagination
 */
